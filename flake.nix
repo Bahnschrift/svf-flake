@@ -21,6 +21,7 @@
         packages = rec {
           svf = pkgs.callPackage ./pkgs/svf.nix { };
           pysvf = pkgs.callPackage ./pkgs/pysvf.nix { inherit svf; };
+          svfir = pkgs.callPackage ./pkgs/svfir.nix { inherit svf; };
 
           default = svf;
         };
@@ -29,6 +30,7 @@
           packages = with self.packages.${system}; [
             svf
             (pkgs.python3.withPackages (_: [ pysvf ]))
+            svfir
           ];
         };
       }

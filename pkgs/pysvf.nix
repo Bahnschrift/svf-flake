@@ -6,7 +6,7 @@
   cmake,
   ninja,
 
-  llvmPackages,
+  llvm,
   z3,
   svf,
 
@@ -40,7 +40,7 @@ python3Packages.buildPythonPackage {
   ];
 
   buildInputs = [
-    llvmPackages.llvm
+    llvm
     z3.lib
     z3
     svf
@@ -50,7 +50,7 @@ python3Packages.buildPythonPackage {
 
   preBuild = ''
     export SVF_DIR=${svf}
-    export LLVM_DIR=${llvmPackages.llvm.dev}/lib/cmake/llvm
+    export LLVM_DIR=${llvm.dev}/lib/cmake/llvm
 
     # SVF-Python's setup.py hardcodes "$Z3_DIR/bin/libz3.so" as both the
     # vendored runtime dependency path (patchelf --add-needed
