@@ -16,7 +16,7 @@
 
 python3Packages.buildPythonPackage {
   pname = "pysvf";
-  version = "unstable";
+  version = "0.0.0"; # Doesn't seem to have proper versioning...
 
   src = fetchFromGitHub {
     owner = "SVF-tools";
