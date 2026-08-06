@@ -21,8 +21,8 @@ python3Packages.buildPythonPackage {
   src = fetchFromGitHub {
     owner = "SVF-tools";
     repo = "SVF-Python";
-    rev = "c4505b271002b9da0ef1069c437018349aa02d26";
-    hash = "sha256-OPozQJ46VqPnPs/KDBLPj+cKWi4TzLWeQpTxcFEHhC0=";
+    rev = "586a4063686e29fc31f4a691ba581714cb44a8a7";
+    hash = "sha256-FGUS8coMHB/1ic86UVw8xTm/WG/Nmcck53OLyMZ3EjY=";
   };
 
   pyproject = true;

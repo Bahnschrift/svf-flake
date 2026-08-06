@@ -8,13 +8,13 @@
 
 stdenv.mkDerivation {
   pname = "SVF";
-  version = "3.3";
+  version = "unstable-2026-08-06";
 
   src = pkgs.fetchFromGitHub {
     owner = "SVF-tools";
     repo = "SVF";
-    rev = "SVF-3.3";
-    hash = "sha256-CH6lft22YKfuXzZGdMYoBdbLGDQq0Hx8LGpmPQih4zo=";
+    rev = "18fb5650600530a54f0afc22f4df1a10b03d3c02";
+    hash = "sha256-LizB76xhB74WRB/98ClGZ8VoV3EtfJgtfMvfbrlzd4k=";
   };
 
   nativeBuildInputs = with pkgs; [
